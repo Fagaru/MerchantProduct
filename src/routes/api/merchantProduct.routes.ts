@@ -5,7 +5,7 @@ const routes = Router();
 // api/roles
 routes.route('/all').get(controllers.all);
 routes.route('/create').post(controllers.create);
-routes.route('/findOne/:id').get(controllers.findOne);
+routes.route('/findOne/:id').get(controllers.getById);
 routes.route('/getByMerchantId/:merchantId').get(controllers.getByMerchantId);
 routes.route('/getByProductId/:productId').get(controllers.getByProductId);
 routes.route('/getSpecificMerchantProduct/:merchantId').get(controllers.getSpecificMerchantProduct);

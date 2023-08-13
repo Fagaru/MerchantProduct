@@ -34,7 +34,7 @@ export const create = async (req: Request, res: Response, next: NextFunction) =>
 };
 
 
-export const findOne = async (req: Request, res: Response, next: NextFunction) =>{
+export const getById = async (req: Request, res: Response, next: NextFunction) =>{
     try{
         const filter = {_id: req.params.id};
         const merchantProduct = await MerchantProduct.findOne(filter);
